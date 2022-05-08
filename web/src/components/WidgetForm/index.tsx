@@ -34,10 +34,6 @@ export const feedbackTypes = {
 
 export type FeedbackType = keyof typeof feedbackTypes
 
-interface FeedbackTypeStepProps {
-  onFeedbackTypeChanged: (type: FeedbackType) => void
-}
-
 export function WidgetForm() {
   const [feedbackType, setFeedbackType] = useState<FeedbackType | null>(null)
   const [feedbackSent, setFeedbackSent] = useState(false)
